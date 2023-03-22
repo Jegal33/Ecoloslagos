@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box; /*no crezca mas alla del tamaño que uno da */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+h4{color: white;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 230px;
+    padding: 10px 30px; /* tamaño boton*/
+    border-radius: 25px; /*bordes redondeados*/
+    border: 1px solid rgba(0, 0, 0, 5); /*borde grueso, solido, color*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5); /*x, y, expansion, color*/
+    color:black; /*color letra*/
+    background-color:white; /*color fondo boton*/
+}
+
+button:hover{
+    background-color: rgb(178, 173, 173);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* .color-acento{ color:#7ed957; }  para cambiar color*/
+
+header{
+    background-color: #7ed957; 
+}
+
+header .logo{ /*esta tomando el logo que esta dentro de container*/
+    margin: 0; /*elimina el margen de arriba*/
+    padding: 25px 30px; /*alto del rectangulo vertical, primer valor arriba abajo, segundo costados*/
+    font-weight: bold;  /*tipo de letra negrita*/
+    color: black;
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column; /* las cosas se ordenan en una columna*/
+    align-items: center; /*centra horizontalmente*/
+}
+
+header nav{ /*todas las cosas nav que existan dentro de header*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none; /*Sacar subrayado*/
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+}
+
+header a:hover{
+    color: white;
+}
+
+header .a:hover{
+    color: black;
+}
+
+#seccion-01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/lagos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion-01 h1{
+    color: white;
+}
+
+#seccion-01 h2{
+    color: white;
+}
+
+#seccion-01 h3{
+    color: white;
+}
+
+#seccion-01 button{
+    font-size: 1.75em;
+}
+
+#seccion-02{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion-02 .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#seccion-03{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #212529;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#seccion-03 .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#seccion-04{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 180vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/skyblue.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*desde aqui comienza el css del registro de voluntarios ----------------------------------------------------*/
+
+.form-register {
+    width: 500px;
+    background: hsl(157, 30%, 48%);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    margin: auto;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls-form{
+    width: 100%;
+    background: #fcfcfc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.form-register .botons:hover {
+    background: #375494;
+}
+
+/*aqui termina el css del registro de voluntarios ----------------------------------------------------------------*/
+
+footer{
+    background-color: #212529;
+}
+
+footer p{
+    margin: 0;
+    padding: px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #seccion-01 h1{
+        font-size: 5em;
+    }
+
+    #seccion-02 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #seccion-02 .texto{
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-02 p{
+        font-size: 1.25em;
+    }
+    
+    #seccion-02 h2{
+        margin-top: 10px;
+        text-decoration: none; 
+        color: black;
+    }
+
+    #seccion-02 .img-container{
+        background-image: url("img/animal.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 125px;
+        width: 200px; 
+    }
+
+    #seccion-02 .img-container2{
+        background-image: url("img/algas.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 125px;
+        width: 200px; 
+    }
+    #seccion-02 .img-container3{
+        background-image: url("img/sobreNosotros.jpg");
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 110px 200px;
+        height: 150px;
+        width: 250px; 
+    }
+
+    #seccion-02 a{
+        margin-top: 10px;
+        font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color:black;
+        text-decoration: none;
+    }
+    
+    #seccion-02 a:hover{
+
+        color:rgb(42, 41, 41);
+        text-decoration:underline;
+    }
+
+    #seccion-03 a{
+        margin-top: 10px;
+        font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color:#adb5bd;
+        text-decoration: none;
+    }
+
+    #seccion-03 a:hover{
+
+        color:#9ec5fe;
+        text-decoration:underline;
+    }
+
+    #seccion-03 h2{
+        font-size: 20px;
+        color: #fff;
+        font-family: system-ui,-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        
+    }
+    #seccion-03 nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+        
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+
